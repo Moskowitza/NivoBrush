@@ -202,12 +202,13 @@ var enhance = compose(
             }
             setState(state);
         },
-        onMouseUP:({setState})=>()=>{
-            setState({draggin:false, difference:0});
+        onMouseUP: ({ setState }) => () => {
+            setState({ draggin: false, difference: 0 });
         }
     }),
     pure
 );
-var EnhancedBrush=enhance(Brush)
-EnhancedBrush.displayName='enhance(Brush)'
+var EnhancedBrush = enhance(Brush)
+EnhancedBrush.displayName = 'enhance(Brush)'
+
 export default EnhancedBrush;
